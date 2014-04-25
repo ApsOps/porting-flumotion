@@ -1,0 +1,590 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #000000;
+    text-shadow: none;
+}
+
+::selection {
+    background: #000000;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 18px 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #6c6a4e;
+}
+
+html {
+    background: #1A1A1A url('/images/black_lozenge.png') repeat top center;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    text-align: justify;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.content p {
+    line-height: 28px;
+}
+
+header {
+    text-align: center;
+    width: 900px;
+    margin: 15px auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #6c6a4e;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+header a h1 {
+    width: 700px;
+    margin: auto;
+    font-family: 'inglourious';
+    font-weight: 500;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+}
+
+header h3 {
+    font-family: 'bookman';
+    color: #ccc;
+    font-weight: 100;
+}
+
+h2 {
+  font-family: Museo-300;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.8em;
+  color: #6c6a4e;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+a {
+    color: #ABAA8C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6c6a4e;
+    text-decoration: underline;
+}
+
+.main {
+    float: left;
+    width: 70%
+}
+
+article {
+    border-bottom: 1px dotted #3E3C2D;
+    margin: 10px;
+    padding: 10px;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+
+aside img {
+    border-radius: 50%;
+    margin: 10px;
+    width: 70%;
+}
+
+.recent {
+    list-style: none;
+    padding: 0;
+}
+
+.recent span {
+    float: right;
+}
+
+.recent li {
+    border-top: 1px dotted #3E3C2D;
+    border-bottom: 1px dotted #3E3C2D;
+    display: block;
+    color: #6c6a4e;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.recent li:hover {
+    background-color: #3E3C2D;
+}
+
+.recent a {
+    display: block;
+    color: #6c6a4e;
+    text-decoration: none;
+    padding: 10px;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.recent a:hover {
+    color: #ABAA8C;
+}
+
+.post-nav {
+    margin: 10px;
+}
+
+.post-nav .post-prev {
+    float: left;
+}
+
+.post-nav .post-next {
+    text-align: right;
+}
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #3E3C2D;
+    width: 900px;
+    margin: auto;
+}
+
+footer span {
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+footer .social {
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+}
+
+footer .social li {
+    display: inline-block;
+}
+
+footer .social a, footer .social a:hover {
+    text-decoration: none;
+    padding: 10px;
+    position:relative; /* make span relative to anchor */
+    cursor:pointer; /* make cursor point */
+}
+
+footer span.hovertext {
+    position:absolute; /* AP it */
+    bottom:0px; /* FADE IN/OUT BEGIN */
+    margin-left:-100%; /* CENTER TOOLTIP */
+    width: 50px; /* tootip width */
+    opacity:0; /* HIDE TOOLTIP in modern browsers */
+    visibility:hidden; /* HIDE TOOLTIP in IE */
+    padding: 5px; /* padding */
+    color:#ABAA8C; /* text color */
+    font-size: 12px;
+    text-align:center; /* center text */
+    pointer-events:none; /* no unintended tooltip popup for modern browsers */
+    border-radius:6px; /* round corners */
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 1); /* text shadow */
+    background:rgb(62,60,45); /* IE6/7/8 */
+    background:rgba(62,60,45,.8); /* modern browsers */
+    border:2px solid rgb(108,106,78); /* IE6/7/8 */
+    border:2px solid rgba(108,106,78,.8); /* modern browsers */
+    box-shadow:0px 2px 4px rgba(0,0,0,0.5); /* shadow */
+    -webkit-transition:all 0.3s ease-in-out; /* animate tooltip */
+    -moz-transition:all 0.3s ease-in-out; /* animate tooltip */
+    -o-transition:all 0.3s ease-in-out; /* animate tooltip */
+    -ms-transition:all 0.3s ease-in-out; /* animate tooltip */
+    transition:all 0.2s ease-in-out; /* animate tooltip */
+}
+
+footer a:hover span { /* reveal tooltip */
+    opacity:1; /* REVEAL TOOLTIP in modern browsers */
+    bottom:40px; /* FADE IN/OUT END */
+    visibility:visible; /* REVEAL TOOLTIP in IE */
+}
+
+/*-------------------------------------------------
+------- Different hover colors as per logo --------
+-------------------------------------------------*/
+footer .social a.facebook:hover {
+    color: #3B5998;
+}
+
+footer .social a.twitter:hover {
+    color: #33CCFF;
+}
+
+footer .social a.gplus:hover {
+    color: #C63D2D;
+}
+
+footer .social a.linkedin:hover {
+    color: #007bb6;
+}
+
+footer .social a.github:hover {  
+  color: #000000;
+  text-shadow:
+   -1px -1px 0 #ABAA8C,  
+    1px -1px 0 #ABAA8C,
+   -1px  1px 0 #ABAA8C,
+    1px  1px 0 #ABAA8C;
+}
+
+footer .social a.mail:hover {
+    color: #ffffff;
+    text-shadow:
+   -2px -2px 0 #C63D2D,  
+    2px -2px 0 #C63D2D,
+   -2px  2px 0 #C63D2D,
+    2px  2px 0 #C63D2D;
+}
+
+/*-----------------------------------------------*/
+
+/*   #6c6a4e -- Light -- 108,106,78
+     #3E3C2D -- Dark -- 62,60,45
+     #ABAA8C -- Lighter -- 171,170,140  */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+/*----------------------------------------------
+------------  Inglourious font -----------------
+-----------------------------------------------*/
+
+@font-face {
+  font-family: 'inglourious';
+  src: url("../fonts/inglourious/fette.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*----------------------------------------------
+--------------  Icon font  ---------------------
+----------------------------------------------*/
+
+@font-face {
+    font-family: 'ico';
+    src:url('../fonts/ico/ico.eot');
+    src:url('../fonts/ico/ico.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ico/ico.woff') format('woff'),
+        url('../fonts/ico/ico.ttf') format('truetype'),
+        url('../fonts/ico/ico.svg#ico') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+}
+
+[data-icon]:before {
+    font-family: 'ico';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*----------------------------------------------*/
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

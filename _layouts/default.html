@@ -1,0 +1,83 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }} | {{ site.title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="{{ site.url }}/css/normalize.css">
+        <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+        <link rel="stylesheet" type="text/css" href="{{site.url}}/fonts/museo/museo.css">
+        <script src="{{ site.url }}/js/vendor/modernizr-2.6.2.min.js"></script>
+        <!--[if lte IE 7]><script src="{{ site.url }}/js/lte-ie7.js"></script><![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <div class="center">
+                <a href="/"><h1>{{ site.title }}</h1></a>
+                <h3>{{ site.tagline }}</h3>
+            </div>
+        </header>
+
+        <div class="wrapper clearfix">
+            <div class="main">
+            
+            {{ content }}
+
+            </div>
+            <aside>
+                <img src="/images/aman-image.jpg" alt="Aman's Image" />
+                <p>Hi, I'm <strong>Amanpreet Singh</strong>.<br />Learn more <a href="/about/">about me</a>.</p>
+                <p>Have a look around and please don’t hesitate to <a href="mailto:{{ site.author.email }}">contact me</a> with any questions, comments or just to say hello :)</p>
+                <p>Follow me on <a href="http://twitter.com/{{ site.author.twitter }}" target="_blank">Twitter</a>.</p>
+            </aside>
+        </div>
+        <footer>
+            <ul class="social">
+                <li>
+                    <a href="http://facebook.com/{{ site.author.facebook }}" aria-hidden="true" data-icon="&#xe001;" class="facebook" target="_blank">
+                        <span class="hovertext">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://twitter.com/{{ site.author.twitter }}" aria-hidden="true" data-icon="&#xe002;" class="twitter" target="_blank">
+                        <span class="hovertext">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/{{ site.author.google_plus }}" aria-hidden="true" data-icon="&#xe005;" class="gplus" target="_blank">
+                        <span class="hovertext">Google+</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/pub/{{ site.author.linkedin }}" aria-hidden="true" data-icon="&#xe010;" class="linkedin" target="_blank">
+                        <span class="hovertext">Linkedin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://github.com/{{ site.author.github }}" aria-hidden="true" data-icon="&#xe000;" class="github" target="_blank">
+                        <span class="hovertext">Github</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:{{ site.author.email }}" aria-hidden="true" data-icon="&#xe00a;" class="mail" target="_blank">
+                        <span class="hovertext">Mail</span>
+                    </a>
+                </li>
+            </ul>
+            <p>Handcrafted with love, by {{ site.author.name }}<br /><span>&copy; 2013 | Powered by Jekyll</span></p>
+        </footer>
+
+    </body>
+</html>
