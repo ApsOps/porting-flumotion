@@ -4,7 +4,7 @@ layout: default
 ---
 {% assign post = site.posts.first %}
 <article>
-	<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+	<a href="{{ site.url }}/{{ post.url }}"><h2>{{ post.title }}</h2></a>
 	<p class="date">
 		{{ post.date | date:"%B %d, %Y" }}
 	</p>
@@ -34,7 +34,7 @@ layout: default
 <ul class="recent">
 {% for post in site.posts offset:0 limit:5 %}
 	<li>
-		<a href="{{ post.url }}">
+		<a href="{{ site.url }}/{{ post.url }}">
 			{{ post.title }}<span>{{ post.date | date:"%B %d, %Y" }}</span>
 		</a>
 	</li>

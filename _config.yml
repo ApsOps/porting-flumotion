@@ -3,6 +3,7 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "blog.sublime-project", "blog.sublime-workspace"]
 pygments: true
 
+url : http://aps-sids.github.io/porting-flumotion
 title : GSoC '14 Progress Blog
 tagline: Porting Flumotion to gstreamer-1.x API - under TimVideos.us
 author :
