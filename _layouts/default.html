@@ -22,6 +22,27 @@ layout: default
 	    transform: none;
 	    font-size: 2em;
 	}
+
+    header {
+        width: 80%;
+    }
+
+    .wrapper {
+        width: 80%;
+    }
+
+    img.build-status {
+        width: 35%;
+        border-radius: 0;
+    }
+
+    .main {
+        width: 75%;
+    }
+
+    aside {
+        width: 25%;
+    }
 	</style>
         <!--[if lte IE 7]><script src="/js/lte-ie7.js"></script><![endif]-->
     </head>
@@ -44,10 +65,12 @@ layout: default
 
             </div>
             <aside>
-                <img src="/images/aman-image.jpg" alt="Aman's Image" />
-                <p>Hi, I'm <strong>Amanpreet Singh</strong>.<br />Learn more <a href="{{ site.url }}/about/">about me</a>.</p>
-                <p>Have a look around and please don’t hesitate to <a href="mailto:{{ site.author.email }}">contact me</a> with any questions, comments or just to say hello :)</p>
-                <p>Follow me on <a href="http://twitter.com/{{ site.author.twitter }}" target="_blank">Twitter</a>.</p>
+                <h2>Useful links</h2>
+                <p><a href="https://travis-ci.org/aps-sids/flumotion-orig"><img class="build-status" src="https://travis-ci.org/aps-sids/flumotion-orig.svg?branch=porting-to-gst1.0"></img></a></p>
+                <p><a href="{{ site.url }}/atom.xml">Atom Feed</a></p>
+                <p><a href="http://www.google-melange.com/gsoc/proposal/public/google/gsoc2014/sids/5668600916475904">Proposal link</a></p>
+                <p><a href="https://github.com/aps-sids/flumotion-orig">Github repo</a></p>
+                <p><a href="https://www.google.com/calendar/embed?src=bon1obps9pvu0rjrpf38a2afto%40group.calendar.google.com&ctz=Asia/Calcutta">My Google calendar</a></p>
             </aside>
         </div>
         <footer>
