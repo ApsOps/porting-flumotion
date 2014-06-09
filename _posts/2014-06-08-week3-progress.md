@@ -36,6 +36,8 @@ Final step needed to "watch" a stream is a sink, httpstreamer. After porting thi
 
 {% endhighlight %}
 
+thaytan from \#gstreamer told me that it means some element is not setting up pads in the right order. It needs to set caps before sending the segment event.
+
 In week 4, I will fix this issue, run a complete test stream successfully and continue with porting of Audiotest producer.
 
 [run a test stream]: http://aps-sids.github.io/porting-flumotion/2014/06/06/run-a-test-stream/
