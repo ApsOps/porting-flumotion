@@ -38,4 +38,4 @@ Same instructions in my earlier post could be used to watch this stream now. Eve
 {% endhighlight %}
 
 [configuration]: https://github.com/aps-sids/flumotion-orig/blob/08ddcaae8321a1e3c970277b059fe889d21bcec4/test_config.xml
-[screenshot]: http://i.imgur.com/hurHQGb.png
+[screenshot]: http://i.imgur.com/hurHQGb.png =100%
