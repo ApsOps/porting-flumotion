@@ -6,15 +6,15 @@ markdown: kramdown
 kramdown:
   use_coderay: false
 
-url : http://aps-sids.github.io/porting-flumotion
+url : http://apsops.github.io/porting-flumotion
 title : GSoC '14 Progress Blog
 tagline: Porting Flumotion to gstreamer-1.x API - under TimVideos.us
 author :
   name : Amanpreet Singh
   email : aps.sids@gmail.com
-  github : aps-sids
+  github : ApsOps
   facebook: amanz008
-  twitter : aps_sids
+  twitter : ApsOps
   linkedin : amanpreet-singh/26/802/666
   google_plus : "114056544272791132056"
 
